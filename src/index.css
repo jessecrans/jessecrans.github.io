@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+body {
+    @apply bg-neutral-800;
+    @apply font-mono;
+    @apply text-white
+}
+
+h1 {
+    /* @apply text-4xl */
+}
+
+h2 {
+    @apply text-2xl
+}
