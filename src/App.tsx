@@ -3,21 +3,19 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Experience from './pages/Experience'
-import Thesis from './pages/Thesis'
 import Blog from './pages/Blog'
+import Footer from './components/Footer'
 
 function App() {
   return (
     <>
       <Navbar />
-      <main className="">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/thesis" element={<Thesis />} />
-          <Route path="/blog" element={<Blog />} />
-        </Routes>
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/experience" element={<Experience />} />
+        <Route path="/blog" element={<Blog />} />
+      </Routes>
+      <Footer />
     </>
   )
 }

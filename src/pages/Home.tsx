@@ -1,9 +1,9 @@
 const Home = () => (
-    <>
+    <main className="max-w-4xl m-auto">
         <section id="title" className="w-full relative">
             <div className="absolute inset-0 text-center flex flex-col justify-center items-center">
-                <h1 className="text-6xl">Jesse Crans</h1>
-                <p className="w-2/3">Welcome to my webpage! This is where I share who I am, what I do, and what I've worked on. You'll also find my blog with ideas and projects I am exploring.</p>
+                <h1>Jesse Crans</h1>
+                <p className="w-2/3 text-text-highlight">Welcome to my webpage! This is where I share who I am, what I do, and what I've worked on. You'll also find my blog with ideas and projects I am exploring.</p>
             </div>
             <img
                 className="h-full w-full object-cover opacity-30"
@@ -12,10 +12,10 @@ const Home = () => (
             />
         </section>
         <div className="py-4 px-8 flex flex-col gap-4">
-            <hr className="h-2 bg-white border-0"/>
-            <section id="about" className="flex gap-4">
+            <hr className="h-1 bg-text-muted border-0"/>
+            <section id="about" className="flex gap-8">
                 <div>
-                    <h2 className="mb-4">About Me</h2>
+                    <h2 className="my-4">About Me</h2>
                     <p>
                         Labore ex fugiat anim eu ad proident sit ipsum duis Lorem id dolore nulla consequat. Ipsum cupidatat aliqua do commodo culpa ut veniam excepteur eiusmod culpa laboris. Eiusmod reprehenderit ullamco anim dolore aute in ullamco consectetur.
                         <br /><br />
@@ -28,10 +28,10 @@ const Home = () => (
                     className="self-start w-80"
                 />
             </section>
-            <hr className="h-2 bg-white border-0"/>
-            <section id="hobbies" className="flex flex-row-reverse gap-4">
+            <hr className="h-1 bg-text-muted border-0"/>
+            <section id="hobbies" className="flex flex-row-reverse gap-8">
                 <div>
-                    <h2>Hobbies</h2>
+                    <h2 className="my-4">Hobbies</h2>
                     <p>
                         Do excepteur Lorem fugiat ullamco ad amet culpa velit qui. Exercitation ullamco occaecat in nostrud amet minim cillum reprehenderit est exercitation magna ullamco. Nisi tempor magna ad laboris adipisicing fugiat adipisicing est sint qui laborum elit incididunt.
                         <br /><br />
@@ -46,9 +46,9 @@ const Home = () => (
                     className="self-start w-80"
                 />
             </section>
-            <hr className="h-2 bg-white border-0"/>
+            <hr className="h-1 bg-text-muted border-0"/>
         </div>
-    </>
+    </main>
 )
 
 export default Home;

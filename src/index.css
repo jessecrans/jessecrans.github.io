@@ -1,15 +1,40 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-background: #1e1e1e;
+    --color-background-soft: #292929;
+
+    --color-text: #d0d0d0;
+    --color-text-muted: #808080;
+    --color-text-highlight: #ffffff;
+
+    --color-primary: #569cd6;
+    --color-accent: #c586c0;
+}
+
 body {
-    @apply bg-neutral-800;
-    @apply font-mono;
-    @apply text-white
+    @apply font-mono; 
+    @apply text-text;
 }
 
 h1 {
-    /* @apply text-4xl */
+    @apply text-6xl;
+    @apply text-text-highlight;
 }
 
 h2 {
-    @apply text-2xl
+    @apply text-4xl;
+    @apply text-text-highlight;
+}
+
+h3 {
+    @apply text-2xl;
+    @apply text-text-highlight;
+}
+
+em {
+    @apply font-bold;
+    @apply not-italic;
 }
