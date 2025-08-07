@@ -27,7 +27,7 @@ const Home = () => {
                 </div>
                 <img
                     className="h-full w-full object-cover opacity-30"
-                    src="src/assets/pipenikbanner.jpg"
+                    src="/pipenikbanner.jpg"
                     alt="My cat, Pip, and me"
                 />
             </section>
@@ -43,7 +43,7 @@ const Home = () => {
                         </p>
                     </div>
                     <img
-                        src="src/assets/ikportret.jpg"
+                        src="/ikportret.jpg"
                         alt="Portrait of me"
                         className="self-start w-80"
                     />
@@ -57,7 +57,7 @@ const Home = () => {
                         </p>
                     </div>
                     <img
-                        src="src/assets/ikportret.jpg"
+                        src="/ikportret.jpg"
                         alt="Portrait of me"
                         className="self-start w-60"
                     />
