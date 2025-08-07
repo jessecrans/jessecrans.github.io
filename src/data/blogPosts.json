@@ -1,0 +1,10 @@
+[
+    {
+        "title": "Test Post",
+        "date": "2025-08-07",
+        "tags": [
+            "HTML"
+        ],
+        "htmlPath": "/posts/testpost.html"
+    }
+]

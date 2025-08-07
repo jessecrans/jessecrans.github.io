@@ -38,3 +38,9 @@ em {
     @apply font-bold;
     @apply not-italic;
 }
+
+hr {
+    @apply h-1;
+    @apply bg-text-muted;
+    @apply border-0;
+}

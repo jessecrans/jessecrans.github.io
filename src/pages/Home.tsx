@@ -32,7 +32,7 @@ const Home = () => {
                 />
             </section>
             <div className="py-4 px-8 flex flex-col gap-4">
-                <hr className="h-1 bg-text-muted border-0" />
+                <hr/>
                 <section id="about" className="flex gap-8">
                     <div>
                         <h2 className="my-4">About Me</h2>
@@ -48,7 +48,7 @@ const Home = () => {
                         className="self-start w-80"
                     />
                 </section>
-                <hr className="h-1 bg-text-muted border-0" />
+                <hr/>
                 <section id="hobbies" className="flex flex-row-reverse gap-8">
                     <div>
                         <h2 className="my-4">Hobbies</h2>
@@ -62,7 +62,7 @@ const Home = () => {
                         className="self-start w-60"
                     />
                 </section>
-                <hr className="h-1 bg-text-muted border-0" />
+                <hr/>
             </div>
         </main>
     )
