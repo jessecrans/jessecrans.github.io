@@ -42,7 +42,7 @@ const Experience = () => (
                 <ExperienceCard
                     title="Pizza Golf Maandag"
                     context="side-project"
-                    tech={["Next.js", "TailwindCSS"]}
+                    tech={["React", "Next.js", "TailwindCSS"]}
                     links={{
                         "website": "https://pizza-golf-maandag.vercel.app/",
                         "github": "https://github.com/jessecrans/pizza-golf-maandag",
@@ -50,7 +50,7 @@ const Experience = () => (
                 >
                     I built a website to track stats for my friend and I's gaming nights, specifically for the game Golf With Your Friends. It contains per hole walkthroughs and rankings, and per player stats such as average score, number of wins, and all time best score.
                     <br /><br />
-                    Working on this project thaught me the basics of the <em>Next.js</em> framework, as well as designing a responsive website using <em>TailwindCSS</em>.
+                    Working on this project thaught me the basics of the <em>React</em> and <em>Next.js</em>, as well as designing a responsive website using <em>TailwindCSS</em>.
                 </ExperienceCard>
             </div>
         </section>
