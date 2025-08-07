@@ -37,7 +37,7 @@ const Home = () => {
                     <div>
                         <h2 className="my-4">About Me</h2>
                         <p className="text-justify">
-                            Hi, I'm Jesse, {getAge("2002-06-02")} years old. I'm currently based in Nijmegen, where I'm studying for my master degree in Particle- and Astrophysics at the Radboud University. During my studies, I've developed strong skills in Pyhon, including data analysis, visualzation, and machine learning, as well as other languages during my minor in Computer Science. Outside of academics, I've expanded my programming knowledge through personal projects, exploring web development with React and planning to start work on a game in the near future. 
+                            Hi, I'm Jesse, {getAge("2002-06-02")} years old and currently based in Nijmegen, where I'm studying for my master degree in Particle- and Astrophysics at the Radboud University. During my studies, I've developed strong skills in Pyhon, including data analysis, visualzation, and machine learning, as well as other languages during my minor in Computer Science. Outside of academics, I've expanded my programming knowledge through personal projects, exploring web development with React and planning to start work on a game in the near future. 
                             <br /><br />
                             I'm an ambitious person, always having a many ideas lined up. I love building and fixing things, especially if they're useful for me, my friends, or my family. That might be a website, a broken controller, a bike, or anything else that needs solving. I'm always looking for ways to make life more efficient, sometimes going a bit overboard, but seeing my efforts pay off is always a great feeling.
                         </p>
@@ -59,7 +59,7 @@ const Home = () => {
                     <img
                         src="src/assets/ikportret.jpg"
                         alt="Portrait of me"
-                        className="self-start w-80"
+                        className="self-start w-60"
                     />
                 </section>
                 <hr className="h-1 bg-text-muted border-0" />
