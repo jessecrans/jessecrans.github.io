@@ -13,13 +13,8 @@ const Experience = () => (
                         "download": "public/Finding_FXTs.pdf",
                         "github": "https://github.com/jessecrans/bachelor-internship"
                     }}
-                >
-                    <p className="text-justify">
-                        For my bachelor thesis I performed large scale <em>data analysis</em> on archival data from the Chandra x-ray satellite, with the goal of finding Fast X-ray Transients (FXTs) hidden amongst the data. Using the algorithm from <a href="https://www.aanda.org/articles/aa/full_html/2023/07/aa45912-23/aa45912-23.html" target="_blank" className="underline">Quirola-Vásquez et al. 2022</a>, which I adapted and improved to fit my specific goals, I managed to find 50 FXT candidates of which 20 had been confirmed by previous work.
-                        <br /><br />
-                        During my internship I worked extensively with Python and more specifically the data handling framework Pandas, as well as with various APIs for retrieving the vast amounts of data needed to classify and verify the FXT candidates.
-                    </p>
-                </ExperienceCard>
+                    htmlPath="./experiences/thesis.html"
+                />
             </div>
         </section>
         <section>
@@ -32,13 +27,8 @@ const Experience = () => (
                     links={{
                         "github": "https://github.com/jessecrans/PyChess5",
                     }}
-                >
-                    <p className="text-justify">
-                        I built a chess engine in Python using the Pygame library. It is a simple min-maxing type engine, primarly based on piece value, with some additional heatmaps for general piece placement guidance. I would estimate it to be around the 700-800 ELO range.
-                        <br /><br />
-                        Working on this project taught me how to structure such a large codebase; implement logic efficiently to maximise performance; and debug thoroughly to ensure the game functioning correctly.
-                    </p>
-                </ExperienceCard>
+                    htmlPath="./experiences/python-chess-engine.html"
+                />
                 <ExperienceCard
                     title="Pizza Golf Maandag"
                     context="side-project"
@@ -47,11 +37,8 @@ const Experience = () => (
                         "website": "https://pizza-golf-maandag.vercel.app/",
                         "github": "https://github.com/jessecrans/pizza-golf-maandag",
                     }}
-                >
-                    I built a website to track stats for my friend and I's gaming nights, specifically for the game Golf With Your Friends. It contains per hole walkthroughs and rankings, and per player stats such as average score, number of wins, and all time best score.
-                    <br /><br />
-                    Working on this project thaught me the basics of the <em>React</em> and <em>Next.js</em>, as well as designing a responsive website using <em>TailwindCSS</em>.
-                </ExperienceCard>
+                    htmlPath="./experiences/pizza-golf-maandag.html"
+                />
             </div>
         </section>
     </main>

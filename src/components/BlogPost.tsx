@@ -1,37 +1,38 @@
 import { useEffect, useState } from "react";
 import { getContrastTextColor, getTagColor } from "../util";
+import { useParams } from "react-router-dom";
+import blogPosts from "../data/blogPosts.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWarning } from "@fortawesome/free-solid-svg-icons";
 
-const BlogPost = ({
-    title,
-    date,
-    tags,
-    htmlPath,
-}: {
-    title: string;
-    date: string;
-    tags?: string[];
-    htmlPath: string;
-}) => {
+const BlogPost = () => {
     const [htmlContent, setHtmlContent] = useState<string>("");
+    const { slug } = useParams();
+    const post = blogPosts.find(p => p.slug === slug);
+
+    if (!post) return (
+        <p className="text-center my-8">
+            <FontAwesomeIcon icon={faWarning}/> Post not found <FontAwesomeIcon icon={faWarning}/>
+        </p>
+    );
 
     useEffect(() => {
-        fetch(htmlPath)
+        fetch(post.htmlPath)
             .then((res) => res.text())
             .then(setHtmlContent)
             .catch(() => setHtmlContent("<p>Failed to load post.</p>"));
-    }, [htmlPath]);
+    }, [post.htmlPath]);
 
     return (
-        <article>
-            <hr className="my-4"/>
+        <article className="p-8 max-w-4xl">
             <header className="flex justify-between items-center">
-                <h3>{title}</h3>
-                <time>{new Date(date).toLocaleDateString("en-GB").replaceAll("/", "-")}</time>
+                <h2>{post.title}</h2>
+                <time>{new Date(post.date).toLocaleDateString("en-GB").replaceAll("/", "-")}</time>
             </header>
             {
-                tags &&
+                post.tags &&
                 <div className="flex gap-4 text-sm my-4">
-                    {tags.map((tag) => {
+                    {post.tags.map((tag) => {
                         const tagColor = getTagColor(tag);
                         const textColor = getContrastTextColor(tagColor);
                         return (
@@ -48,9 +49,8 @@ const BlogPost = ({
             }
             <div
                 dangerouslySetInnerHTML={{ __html: htmlContent }}
-                className=""
+                className="text-justify"
             />
-            <hr className="mt-4"/>
         </article>
     )
 }

@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, type IconDefinition } from "@fortawesome/free-brands-svg-icons";
 import { faDownload, faGlobe, faLink } from "@fortawesome/free-solid-svg-icons";
@@ -15,16 +15,24 @@ const ExperienceCard = ({
     context,
     image,
     tech,
-    children,
     links,
+    htmlPath
 }: {
     title: string,
     context: string,
     image?: string,
     tech: string[],
-    children: ReactNode,
-    links: Record<string, string>
+    links: Record<string, string>,
+    htmlPath: string,
 }) => {
+    const [htmlContent, setHtmlContent] = useState<string>("");
+
+    useEffect(() => {
+        fetch(htmlPath)
+            .then((res) => res.text())
+            .then(setHtmlContent)
+            .catch(() => setHtmlContent("<p>Failed to load post.</p>"));
+    }, [htmlPath]);
     return (
         <div className="bg-background shadow rounded border-1 p-8 flex justify-between gap-2">
             <div className="flex flex-col gap-4">
@@ -34,7 +42,10 @@ const ExperienceCard = ({
                 <p className="text-text-muted italic text-sm">{context}</p>
 
                 {/* DESCRIPTION */}
-                <div>{children}</div>
+                <div
+                    className="text-justify"
+                    dangerouslySetInnerHTML={{ __html: htmlContent }}
+                />
 
                 {/* TECH TAGS */}
                 <div className="flex gap-4 text-sm">
@@ -72,12 +83,12 @@ const ExperienceCard = ({
 
             </div>
             <div>
-                {image ?
+                {image &&
                     <img
                         src={image}
                         alt={`${title} image`}
                         className="w-40 h-40 aspect-square"
-                    /> : ''
+                    />
                 }
             </div>
         </div>
