@@ -34,7 +34,7 @@ const ExperienceCard = ({
             .catch(() => setHtmlContent("<p>Failed to load post.</p>"));
     }, [htmlPath]);
     return (
-        <div className="bg-background shadow rounded border-1 p-8 flex justify-between gap-2">
+        <div className="bg-background shadow rounded border-1 p-4 flex justify-between gap-2">
             <div className="flex flex-col gap-4">
 
                 {/* TITLE and SUBTITLE */}
