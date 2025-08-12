@@ -21,16 +21,7 @@ const Experience = () => (
             <h2 className="my-8 text-center">Other Work</h2>
             <div className="flex flex-col gap-8">
                 <ExperienceCard
-                    title="Python Chess Engine"
-                    context="side-project"
-                    tech={["Python", "Pygame"]}
-                    links={{
-                        "github": "https://github.com/jessecrans/PyChess5",
-                    }}
-                    htmlPath="./experiences/python-chess-engine.html"
-                />
-                <ExperienceCard
-                    title="Pizza Golf Maandag"
+                    title="Game-Night Stat-Tracking Website"
                     context="side-project"
                     tech={["React", "Next.js", "TailwindCSS"]}
                     links={{
@@ -38,6 +29,15 @@ const Experience = () => (
                         "github": "https://github.com/jessecrans/pizza-golf-maandag",
                     }}
                     htmlPath="./experiences/pizza-golf-maandag.html"
+                />
+                <ExperienceCard
+                    title="Python Chess Engine"
+                    context="side-project"
+                    tech={["Python", "Pygame"]}
+                    links={{
+                        "github": "https://github.com/jessecrans/PyChess5",
+                    }}
+                    htmlPath="./experiences/python-chess-engine.html"
                 />
             </div>
         </section>

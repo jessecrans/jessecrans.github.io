@@ -17,6 +17,7 @@
 body {
     @apply font-mono; 
     @apply text-text;
+    @apply max-md:text-sm;
 }
 
 h1 {
