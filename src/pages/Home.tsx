@@ -50,9 +50,9 @@ const Home = () => {
                 <section id="hobbies">
                     <h2 className="my-4">Hobbies</h2>
                     <img
-                        src="/ikportret.jpg"
+                        src="/ikspeelbas.jpg"
                         alt="Portrait of me"
-                        className="float-left w-80 max-md:w-40 h-auto mr-4 mb-4"
+                        className="float-left w-60 max-md:w-30 h-auto mr-4 mb-4"
                     />
                     <p className="text-justify">
                         In my free time, I enjoy playing and producing music. I mainly play guitar and a bit of bass. I've released my first album some time ago and am slowly working on a second one. I also like messing around with hardware, fixing and customizing things like Joy-Cons and old 3DS consoles. When it comes to games, I often play Rocket League and League of Legends with friends, and games like Splatoon 3 and Mario Kart with my girlfriend. From time to time I like to go outside as well, mostly playing tennis, cycling or just strolling around the city of Nijmegen.

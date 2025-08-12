@@ -12,6 +12,14 @@ const Resume = () => {
       >
         Resume (Dutch) <FontAwesomeIcon icon={faDownload} /> 
       </a>
+      <a
+        href="/JLCrans_CV_ENG.pdf" 
+        download 
+        target="_blank" 
+        className="bg-background hover:bg-background-soft p-4 rounded"
+      >
+        Resume (English) <FontAwesomeIcon icon={faDownload} /> 
+      </a>
       {/* <a className="bg-background hover:bg-background-soft p-4 rounded">Resume (English)</a> */}
     </main>
   )
