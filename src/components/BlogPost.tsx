@@ -24,7 +24,7 @@ const BlogPost = () => {
     }, [post.htmlPath]);
 
     return (
-        <article className="p-8 max-w-4xl">
+        <article className="p-8 max-w-4xl m-auto">
             <header className="flex justify-between items-center">
                 <h2>{post.title}</h2>
                 <time>{new Date(post.date).toLocaleDateString("en-GB").replaceAll("/", "-")}</time>
