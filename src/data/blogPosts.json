@@ -1,11 +1,10 @@
 [
     {
-        "title": "Test Post",
-        "slug": "test-post",
+        "title": "Welcome to my blog!",
+        "slug": "welcome-to-my-blog",
         "date": "2025-08-07",
         "tags": [
-            "HTML"
         ],
-        "htmlPath": "/posts/testpost.html"
+        "htmlPath": "/posts/welcome.html"
     }
 ]
