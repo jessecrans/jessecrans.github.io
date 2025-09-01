@@ -21,7 +21,17 @@ const Experience = () => (
             <h2 className="my-8 text-center">Other Work</h2>
             <div className="flex flex-col gap-8">
                 <ExperienceCard
-                    title="Game-Night Stat-Tracking Website"
+                    title="Make A Choice"
+                    context="side-project"
+                    tech={["Astro", "Svelte", "TailwindCSS"]}
+                    links={{
+                        "website": "https://jessecrans.github.io/make-a-choice/",
+                        "github": "https://github.com/jessecrans/make-a-choice",
+                    }}
+                    htmlPath="./experiences/make-a-choice.html"
+                />
+                <ExperienceCard
+                    title="Pizza Golf Maandag"
                     context="side-project"
                     tech={["React", "Next.js", "TailwindCSS"]}
                     links={{
