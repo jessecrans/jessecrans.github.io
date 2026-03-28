@@ -41,6 +41,36 @@ const Experience = () => (
                     htmlPath="./experiences/pizza-golf-maandag.html"
                 />
                 <ExperienceCard
+                    title="Online TicTacToe"
+                    context="side-project"
+                    tech={["React", "Next.js", "Firebase"]}
+                    links={{
+                        "website": "https://nextjs-firebase-game-test.vercel.app/",
+                        "github": "https://github.com/jessecrans/nextjs-firebase-game-test",
+                    }}
+                    htmlPath="./experiences/online-tictactoe.html"
+                />
+                <ExperienceCard
+                    title="ToDo Lists"
+                    context="side-project"
+                    tech={["React", "Next.js", "Firebase"]}
+                    links={{
+                        "website": "https://crud-nextjs-firebase.vercel.app/",
+                        "github": "https://github.com/jessecrans/crud-nextjs-firebase",
+                    }}
+                    htmlPath="./experiences/crud-todo.html"
+                />
+                <ExperienceCard
+                    title="Pokerchips Tracker"
+                    context="side-project"
+                    tech={["React", "CSS", "Vite"]}
+                    links={{
+                        "website": "https://jessecrans.github.io/PokerChips/",
+                        "github": "https://github.com/jessecrans/PokerChips",
+                    }}
+                    htmlPath="./experiences/chip-tracker.html"
+                />
+                <ExperienceCard
                     title="Python Chess Engine"
                     context="side-project"
                     tech={["Python", "Pygame"]}
